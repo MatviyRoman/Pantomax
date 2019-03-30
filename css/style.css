@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -9,14 +10,261 @@ body {
 }
 
 header {
-	background: url(../images/header.png);
-	background-size: contain;
+	background: url(../images/header.png) no-repeat;
+	/*background-size: contain;*/
+	/*background-size: 100% 100%;*/
 	background-position: center;
-	height: 1000px;
+	/*height: 800px;*/
+}
+
+header .pantomax {
+	font-size: 60px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+header .pantomax>span {
+	font-size: 60px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #f4481a;
+}
+
+header span {
+	color: #fff;
+	font-size: 24px;
+}
+
+header .left h1 {
+	font-size: 22px;
+	color: #fff;
+}
+
+header .left span,
+header .left pre {
+	font-size: 16px;
+	color: #fff;
+}
+
+header .left .rounded-circle {
+	background: #c43914;
+	border: #a16c49;
+	width: 25px;
+	height: 25px;
+}
+
+header .right .number {
+	background: #fff;
+	color: #000;
+	font-size: 50px;
+	font-weight: bold;
+	text-decoration: line-through;
+	height: 54px;
+}
+
+header .right .alfa {
+	opacity: 0.7;
+}
+
+header .right span {
+	font-size: 19px;
+}
+
+header .center span {
+	font-size: 19px;
+	text-align: center;
+}
+
+header .question {
+	font-size: 60px !important;
+	text-transform: uppercase;
+	color: #ecde8f !important;
+	/*font-family: 'Roboto Condensed';*/
+	font-weight: bold;
+}
+
+header .card {
+	border-radius: 10px;
+	text-align: center;
+}
+
+header .card .price {
+	position: absolute;
+	top: -10px;
+	left: 5px;
+}
+
+header .card .full-price {
+	font-size: 18px;
+	font-weight: bold;
+	color: #815d53;
+}
+
+header .card .promotional-price {
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+}
+
+header .card span {
+	font-size: 13px;
+	color: #000;
+}
+
+header .card button {
+	background: #f4481a url(../images/bg-btn.jpg) no-repeat !important;
+	background-position: left;
+	background-size: cover;
+	font-size: 22px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: #f4481a;
+	border-radius: 5px
+}
+
+.block-2 {
+	background: #000 url(../images/fire.png) no-repeat;
+	background-position: center;
+	background-size: 90% 90%;
+}
+
+.block-2 .rounded-circle {
+	width: 60px;
+	height: 60px;
+	background: #e5e5e5;
+	color: #000 !important;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.block-2 sup span {
+	position: absolute;
+    top: 25px;
+    left: 22px;
+}
+
+.block-2 .question {
+	color: #fff;
+	font-size: 48px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.block-2 .question>span:nth-child(1n+0) {
+	color: #fc481a;
+}
+
+.block-2 .question>span:nth-child(2n+0) {
+	color: #fff;
+	font-weight: normal;
+}
+
+.block-2 .answer {
+	color: #fff;
+	font-size: 22px;
+}
+
+.block-2 #question {
+	background: #fff;
+	border-radius: 15px;
+}
+
+.block-2 #question span {
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.block-2 #question .rounded-circle {
+	color: #fff;
+	font-weight: normal;
+}
+
+.block-2 #question button {
+	background: url(../images/block-2-btn.png) no-repeat;
+	background-position: center;
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: #fc481a;
+}
+
+.block-3 {
+	background: #fff url(../images/girl-bg.jpg) no-repeat;
+	background-size: contain;
+    background-position: 100% 100%;
+	border-radius: 10px;
+}
+
+.block-3 h2 {
+	text-transform: uppercase;
+	font-size: 48px;
+	font-weight: bold;
+}
+
+.block-3 h2>span {
+	font-size: 48px;
+	color: #fc481a;
+}
+
+.block-3 span {
+	font-size: 17px;
+	text-shadow: 1px 1px #fff, 1px -1px #fff, -1px -1px #fff, -1px 1px #fff;
+}
+
+.block-3 span:nth-child(2) {
+	font-weight: bold;
+}
+
+.block-4 {
+	/*background: #000 url(../images/pantomax.png) no-repeat;*/
+	/*background-size: cover;*/
+	background: #000 url(../images/block-4-bg.png) no-repeat;
+    background-position: left bottom;
+}
+
+.block-4 .title {
+	color: #fff;
+	font-size: 48px;
+	text-transform: uppercase;
+}
+
+.block-4 .title>span:nth-child(1) {
+	font-weight: bold;
+}
+
+.block-4 .title>span:nth-child(2),
+.block-4 .title>span:nth-child(3) {
+	font-weight: bold;
+}
+
+.block-4 .title>span:nth-child(3) {
+	color: #fc481a;
+}
+
+.block-4 .card,
+.block-4 .card img {
+	border-radius: 15px;
+}
+
+.block-4 .card img {
+	border-radius: 15px 15px 3px 3px;
+}
+
+.block-4 .card-text {
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
 }
 
 footer {
-	background: #fff;
+	background: #fff url(../images/doctor1.png) no-repeat;
+	/*background-size: contain;
+	background-position: right top;*/
+	background-size: contain;
+    background-position: 100% 100%;
+	border-radius: 10px;
 }
 
 footer h6 {
@@ -37,3 +285,7 @@ footer span {
 footer span:nth-child(9) {
 	font-weight: bold;
 }
+
+/*footer .right {
+	background-image: url(../images/footer.png) no-repeat;
+}*/
